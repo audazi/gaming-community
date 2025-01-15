@@ -1,11 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import MainContent from './components/sections/MainContent';
-import Sidebar from './components/sections/Sidebar';
-import LatestArticles from './components/sections/LatestArticles';
-import Community from './components/sections/Community';
+import Home from './pages/Home';
 import Events from './pages/Events';
+import Updates from './pages/Updates';
+import Archives from './pages/Archives';
+import Teams from './pages/Teams';
+import Rules from './pages/Rules';
+import Tournaments from './pages/Tournaments';
+import Demos from './pages/Demos';
+import Results from './pages/Results';
+import Forum from './pages/Forum';
 import './App.css';
 
 function App() {
@@ -13,23 +18,18 @@ function App() {
     <Router>
       <div className="app">
         <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={
-              <>
-                <div className="cards-container">
-                  <MainContent />
-                  <Sidebar />
-                </div>
-                <div className="sections-wrapper">
-                  <LatestArticles />
-                  <Community />
-                </div>
-              </>
-            } />
-            <Route path="/events" element={<Events />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/updates" element={<Updates />} />
+          <Route path="/archives" element={<Archives />} />
+          <Route path="/teams" element={<Teams />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/tournaments" element={<Tournaments />} />
+          <Route path="/demos" element={<Demos />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/forum" element={<Forum />} />
+        </Routes>
         <Footer />
       </div>
     </Router>

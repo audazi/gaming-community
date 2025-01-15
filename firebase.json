@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "gaming-community",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
