@@ -1,0 +1,81 @@
+.scoreboard-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-tertiary);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.scoreboard-table thead {
+    background: #2a2a2a;
+}
+
+.scoreboard-table th {
+    background-color: var(--color-primary);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.scoreboard-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-secondary);
+    color: var(--color-light);
+}
+
+.scoreboard-table tbody tr:hover {
+    background-color: var(--color-secondary);
+}
+
+.scoreboard-table tbody tr td:first-child {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Top 3 players highlighting with new color scheme */
+.scoreboard-table tbody tr:nth-child(1) td {
+    background-color: rgba(72, 187, 120, 0.1); /* Matching the win-streak green */
+}
+
+.scoreboard-table tbody tr:nth-child(2) td {
+    background-color: rgba(160, 174, 192, 0.1); /* Matching the normal state color */
+}
+
+.scoreboard-table tbody tr:nth-child(3) td {
+    background-color: rgba(245, 101, 101, 0.1); /* Matching the loss-streak red */
+}
+
+@media (max-width: 768px) {
+    .scoreboard-container {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .scoreboard-table {
+        font-size: 0.9rem;
+    }
+
+    .scoreboard-table th,
+    .scoreboard-table td {
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,125 @@
+.results-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.results-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--color-light);
+}
+
+.match-card {
+    background-color: var(--color-tertiary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.match-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.match-date {
+    color: var(--color-light);
+    font-size: 0.9rem;
+}
+
+.server-info {
+    color: var(--color-accent);
+    font-size: 0.9rem;
+}
+
+.match-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.winner {
+    color: #48bb78;
+}
+
+.loser {
+    color: #f56565;
+}
+
+.match-score {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-light);
+    padding: 0 1.5rem;
+}
+
+.maps-info {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.map-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    color: var(--color-light);
+    font-size: 0.9rem;
+}
+
+.map-name {
+    color: var(--color-accent);
+}
+
+.map-score {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .results-container {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .match-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .match-score {
+        margin: 1rem 0;
+    }
+
+    .team {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings - Gaming Community</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./assets/css/standings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="left-section">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="./assets/images/ilog.png" alt="Website Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">News</a>
+                            <ul class="dropdown">
+                                <li><a href="./events.html">Events</a></li>
+                                <li><a href="./updates.html">Updates</a></li>
+                                <li><a href="./archives.html">Archives</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Info</a>
+                            <ul class="dropdown">
+                                <li><a href="./teams.html">Teams</a></li>
+                                <li><a href="./rules.html">Rules</a></li>
+                                <li><a href="./mappool.html">Mappool</a></li>
+                                <li><a href="./about.html">About</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Competitive</a>
+                            <ul class="dropdown">
+                                <li><a href="./tournaments.html">Tournaments</a></li>
+                                <li><a href="./standings.html">Standings</a></li>
+                                <li><a href="./results.html">Results</a></li>
+                                <li><a href="./scoreboards.html">Scoreboards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Community</a>
+                            <ul class="dropdown">
+                                <li><a href="./forum.html">Forum</a></li>
+                                <li><a href="./demos.html">Demos</a></li>
+                                <li><a href="./files.html">Files</a></li>
+                                <li><a href="./servers.html">Servers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-section">
+                <button class="user-trigger">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+                <div class="login-card">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit" class="login-button">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                        <div class="login-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <div class="social-login">
+                            <p>Or login with</p>
+                            <div class="social-buttons">
+                                <button type="button" class="social-btn google"><i class="fab fa-google"></i></button>
+                                <button type="button" class="social-btn facebook"><i class="fab fa-facebook-f"></i></button>
+                                <button type="button" class="social-btn twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                        </div>
+                        <div class="register-link">
+                            <p>Don't have an account? <a href="#">Register now</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <div class="standings-container">
+            <h2 class="standings-title">Unfreeze League Current Standings 2025</h2>
+            <div class="overflow-x-auto">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th title="Ranking">#</th>
+                            <th title="Team name">Team</th>
+                            <th title="Matches Won" class="text-right">W</th>
+                            <th title="Matches Lost" class="text-right">L</th>
+                            <th title="Kill/Thaw Ratio" class="text-right">KT</th>
+                            <th title="Total Kills" class="text-right">Kills</th>
+                            <th title="Total Thaws" class="text-right">Thaws</th>
+                            <th title="Total Deaths" class="text-right">Deaths</th>
+                            <th title="Efficiency" class="text-right">Eff</th>
+                            <th title="Current streak" class="text-right">Streak</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left">1</td>
+                            <td class="text-left">ILM</td>
+                            <td class="text-right">31</td>
+                            <td class="text-right">17</td>
+                            <td class="text-right">1.45</td>
+                            <td class="text-right">2890</td>
+                            <td class="text-right">2156</td>
+                            <td class="text-right">1987</td>
+                            <td class="text-right">71.8%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple positive"></i><i class="fa-solid fa-chart-simple positive"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">2</td>
+                            <td class="text-left">Double Trouble</td>
+                            <td class="text-right">30</td>
+                            <td class="text-right">17</td>
+                            <td class="text-right">1.38</td>
+                            <td class="text-right">2765</td>
+                            <td class="text-right">2012</td>
+                            <td class="text-right">2001</td>
+                            <td class="text-right">70.2%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple positive"></i><i class="fa-solid fa-chart-simple positive"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">3</td>
+                            <td class="text-left">oKo</td>
+                            <td class="text-right">30</td>
+                            <td class="text-right">19</td>
+                            <td class="text-right">1.32</td>
+                            <td class="text-right">2654</td>
+                            <td class="text-right">1998</td>
+                            <td class="text-right">2012</td>
+                            <td class="text-right">69.5%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple positive"></i><i class="fa-solid fa-chart-simple positive"></i><i class="fa-solid fa-chart-simple positive"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">4</td>
+                            <td class="text-left">Agressive Shotting Squad</td>
+                            <td class="text-right">29</td>
+                            <td class="text-right">19</td>
+                            <td class="text-right">1.29</td>
+                            <td class="text-right">2543</td>
+                            <td class="text-right">1976</td>
+                            <td class="text-right">1967</td>
+                            <td class="text-right">68.9%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple negative"></i><i class="fa-solid fa-chart-simple negative"></i><i class="fa-solid fa-chart-simple negative"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">5</td>
+                            <td class="text-left">Frozen Warriors</td>
+                            <td class="text-right">27</td>
+                            <td class="text-right">21</td>
+                            <td class="text-right">1.25</td>
+                            <td class="text-right">2432</td>
+                            <td class="text-right">1943</td>
+                            <td class="text-right">1945</td>
+                            <td class="text-right">67.8%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple normal"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">6</td>
+                            <td class="text-left">Ice Breakers</td>
+                            <td class="text-right">26</td>
+                            <td class="text-right">22</td>
+                            <td class="text-right">1.22</td>
+                            <td class="text-right">2387</td>
+                            <td class="text-right">1921</td>
+                            <td class="text-right">1956</td>
+                            <td class="text-right">66.9%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple positive"></i><i class="fa-solid fa-chart-simple positive"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">7</td>
+                            <td class="text-left">Frost Giants</td>
+                            <td class="text-right">25</td>
+                            <td class="text-right">23</td>
+                            <td class="text-right">1.18</td>
+                            <td class="text-right">2298</td>
+                            <td class="text-right">1898</td>
+                            <td class="text-right">1943</td>
+                            <td class="text-right">65.7%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple negative"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">8</td>
+                            <td class="text-left">Arctic Wolves</td>
+                            <td class="text-right">24</td>
+                            <td class="text-right">24</td>
+                            <td class="text-right">1.15</td>
+                            <td class="text-right">2243</td>
+                            <td class="text-right">1876</td>
+                            <td class="text-right">1954</td>
+                            <td class="text-right">64.8%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple normal"></i><i class="fa-solid fa-chart-simple normal"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">9</td>
+                            <td class="text-left">Snow Leopards</td>
+                            <td class="text-right">23</td>
+                            <td class="text-right">25</td>
+                            <td class="text-right">1.12</td>
+                            <td class="text-right">2187</td>
+                            <td class="text-right">1854</td>
+                            <td class="text-right">1965</td>
+                            <td class="text-right">63.9%</td>
+                            <td class="text-right"><i class="fa-solid fa-chart-simple negative"></i><i class="fa-solid fa-chart-simple negative"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your premier destination for competitive gaming and community engagement.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./latest-news.html">News</a></li>
+                    <li><a href="./tournaments.html">Tournaments</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gaming Community. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../src/assets/js/auth.js"></script>
+</body>
+</html>

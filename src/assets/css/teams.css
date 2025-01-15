@@ -1,0 +1,277 @@
+/* Teams Container */
+.teams-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Teams Header */
+.teams-header {
+    margin-bottom: 2rem;
+}
+
+.teams-header h1 {
+    color: var(--color-light);
+    margin-bottom: 1rem;
+}
+
+.teams-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#team-search,
+#game-filter {
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    background-color: var(--color-tertiary);
+    color: var(--color-light);
+}
+
+#team-search {
+    flex: 1;
+}
+
+#game-filter {
+    width: 200px;
+}
+
+/* Teams Grid */
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.team-card {
+    background-color: var(--color-tertiary);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-banner {
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.team-logo-small {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -32px;
+    left: 1.5rem;
+    background-color: var(--color-tertiary);
+    padding: 0.5rem;
+}
+
+.team-content {
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.team-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.team-name {
+    color: var(--color-light);
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.team-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.game-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+}
+
+.team-description {
+    color: var(--color-light);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.member {
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--color-tertiary);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-light);
+}
+
+/* Team Details */
+.team-details .team-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-details .team-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.team-details .team-info {
+    flex: 1;
+}
+
+.team-details .team-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team-details .team-description {
+    margin-bottom: 2rem;
+}
+
+.team-achievements {
+    margin-bottom: 2rem;
+}
+
+.team-achievements h3,
+.team-roster h3 {
+    color: var(--color-light);
+    margin-bottom: 1rem;
+}
+
+.achievements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.achievement-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.achievement-card h4 {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.roster-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.roster-member {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--color-secondary);
+}
+
+.roster-member i {
+    color: var(--color-light);
+}
+
+.team-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.primary-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .teams-filters {
+        flex-direction: column;
+    }
+
+    #game-filter {
+        width: 100%;
+    }
+
+    .team-details .team-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .modal-content {
+        margin: 0;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+}
